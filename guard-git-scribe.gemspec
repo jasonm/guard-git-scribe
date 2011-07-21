@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Guard::Git::Scribe::VERSION
   s.authors     = ["Jason Morrison"]
   s.email       = ["jmorrison@thoughtbot.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/jasonm/guard-git-scribe"
   s.summary     = %q{Guard::GitScribe automatically rebuilds your git-scribe ebooks}
   s.description = %q{Guard::GitScribe automatically rebuilds your git-scribe ebooks}
 
