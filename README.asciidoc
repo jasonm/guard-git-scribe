@@ -22,7 +22,11 @@ Hanging out in your git-scribe ebook's directory?  Great, you're good to go!  Ge
     gem "guard"
     gem "guard-git-scribe"
 
-and your Guardfile gussied up:
+and ready for success:
+
+    $ bundle install
+
+then get your `Guardfile` gussied up:
 
     # Guardfile
     guard 'git-scribe' do
