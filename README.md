@@ -1,0 +1,39 @@
+= Guard support for git-scribe
+
+Step 1: Have a great ebook idea
+Step 2: ???
+Step 3: Profit!
+
+Kept awake on those long and lonesome nights, searching your soul for that step 2?  Well search no more, guard-git-scribe is here!
+
+Use Guard (which is awesome) with git-scribe (extremely awesome) to write eBooks, and hit like six fewer keys every time you want to see your content in a browser.
+
+*git-scribe*: https://github.com/schacon/git-scribe
+
+*Guard*: https://github.com/guard/guard
+
+== Installation
+
+Hanging out in your git-scribe ebook's directory?  Great, you're good to go!  Get your `Gemfile` dressed:
+
+    # Gemfile
+    source :rubygems
+
+    gem "git-scribe"
+    gem "guard"
+    gem "guard-git-scribe"
+
+and your Guardfile gussied up:
+
+    # Guardfile
+    guard 'git-scribe' do
+      watch (%r{book/})
+    end
+
+and hit the town!
+
+    $ guard
+    Guard is now watching at '/Users/jason/sweet_sweet_ebook'
+    git-scribe is waiting for book changes...
+
+I like to just rebuild the `site` target.  Do you use something else?  Pull req me.
