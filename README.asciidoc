@@ -31,7 +31,7 @@ and your Guardfile gussied up:
 
 and hit the town!
 
-    $ guard
+    $ bundle exec guard
     Guard is now watching at '/Users/jason/sweet_sweet_ebook'
     git-scribe is waiting for book changes...
 
